@@ -1,0 +1,292 @@
+---
+import BaseLayout from "src/layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Skyline Technologies | Home"
+  description="Meta description for the page"
+>
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-2332">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Services</span>
+            <h2 class="cs-title">We offer awesome services!</h2>
+            <p class="cs-text">
+                At Buildstitch Construction, we bring your dreams to life with unparalleled craftsmanship and a commitment to excellence.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <div class="cs-flex">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/buildstitch-s1.svg" alt="car" width="48" height="48">
+                        <h3 class="cs-h3">Construction Services</h3>
+                    </div>
+                    <p class="cs-item-text">
+                        Building exceptional homes that combine innovation with timeless design for families.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <div class="cs-flex">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/buildstitch-s1.svg" alt="car" width="48" height="48">
+                        <h3 class="cs-h3">Construction Services</h3>
+                    </div>
+                    <p class="cs-item-text">
+                        Building exceptional homes that combine innovation with timeless design for families.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <div class="cs-flex">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/buildstitch-s1.svg" alt="car" width="48" height="48">
+                        <h3 class="cs-h3">Construction Services</h3>
+                    </div>
+                    <p class="cs-item-text">
+                        Building exceptional homes that combine innovation with timeless design for families.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <div class="cs-flex">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/buildstitch-s1.svg" alt="car" width="48" height="48">
+                        <h3 class="cs-h3">Construction Services</h3>
+                    </div>
+                    <p class="cs-item-text">
+                        Building exceptional homes that combine innovation with timeless design for families.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <div class="cs-flex">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/buildstitch-s2.svg" alt="car" width="48" height="48">
+                        <h3 class="cs-h3">Building Solutions</h3>
+                    </div>
+                    <p class="cs-item-text">
+                        Building exceptional homes that combine innovation with timeless design for families.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <div class="cs-flex">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/buildstitch-s3.svg" alt="car" width="48" height="48">
+                        <h3 class="cs-h3">Home Construction</h3>
+                    </div>
+                    <p class="cs-item-text">
+                        Building exceptional homes that combine innovation with timeless design for families.
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <img class="cs-floater" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building-clip.png" alt="building" width="571" height="362" loading="lazy" decoding="async" aria-hidden="true">
+</section>
+                                
+
+</BaseLayout>
+
+<style lang="less">
+  /*-- -------------------------- -->
+<---         Services           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #services-2332 {
+        padding: var(--sectionPadding);
+        background-color: #FFFCF3;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            /* changes to 1280px at tablet */
+            max-width: (584/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+        }
+
+        .cs-title {
+            max-width: 22ch;
+        }
+
+        .cs-card-group {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+
+        .cs-item {
+            text-align: left;
+            list-style: none;
+            width: 100%;
+            margin: 0;
+            /* prevents padding and border from affecting height and width */
+            box-sizing: border-box;
+            /* 32px - 60px top & bottom */
+            /* 16px - 48px sides */
+            padding: clamp(2rem, 8vw, 3.75rem) clamp(1rem, 3vw, 3rem);
+            background-color: #FFFCF3;
+            border-bottom: 1px solid #e7e7e8;
+            grid-column: span 12;
+            grid-row: span 1;
+            position: relative;
+            z-index: 1;
+            transition: background-color 0.3s;
+        }
+
+        .cs-link {
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: (16/16rem);
+            align-items: center;
+        }
+
+        .cs-flex {
+            display: flex;
+            align-items: center;
+            gap: (24/16rem);
+        }
+
+        .cs-icon {
+            width: (40/16rem);
+            height: auto;
+        }
+
+        .cs-h3 {
+            /* 20px - 25px */
+            font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+            font-weight: bold;
+            line-height: 1.2em;
+            text-align: inherit;
+            margin: 0;
+            color: var(--headerColor);
+        }
+
+        .cs-item-text {
+            line-height: 1.5em;
+            max-width: (450/16rem);
+            margin: 0;
+            padding: 0;
+            color: var(--bodyTextColor);
+        }
+
+        .cs-floater {
+            width: 571/16rem;
+            height: auto;
+            object-fit: contain;
+            position: absolute;
+            bottom: 0;
+            left: (-100/16rem);
+            z-index: -1;
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #services-2332 {
+        .cs-container {
+            max-width: (1280/16rem);
+        }
+
+        .cs-card-group {
+            gap: 0;
+            border: 1px solid #e7e7e8;
+        }
+
+        .cs-item {
+            border-right: 1px solid #e7e7e8;
+            grid-column: span 4;
+            position: relative;
+
+            &:hover {
+                background-color: #fff9e8;
+            }
+
+            &:nth-of-type(5), &:nth-of-type(8) {
+                position: relative;
+                z-index: 100;
+                /* middle-left square */
+                &::before {
+                    content: "";
+                    width: (9/16rem);
+                    height: (9/16rem);
+                    background-color: var(--secondary);
+                    position: absolute;
+                    top: (-5/16rem);
+                    left: (-5/16rem);
+                    z-index: 99;
+                }
+
+                &::after {
+                    content: "";
+                    width: (9/16rem);
+                    height: (9/16rem);
+                    background-color: var(--secondary);
+                    position: absolute;
+                    top: (-5/16em);
+                    right: (-5/16rem);
+                    z-index: 99;
+                }
+            }
+
+            &:nth-of-type(3), &:nth-of-type(6) {
+                border-right: none;
+            }
+
+            &:nth-of-type(4), &:nth-of-type(5), &:nth-of-type(6) {
+                border-bottom: none;
+            }
+
+            &:nth-of-type(7), &:nth-of-type(8), &:nth-of-type(9) {
+                border-top: 1px solid #e7e7e8;
+                border-bottom: none;
+            }
+
+            &:nth-of-type(9) {
+                border-right: none;
+            }
+        }
+    }
+}
+
+/* Large Desktop - 1700px */
+@media only screen and (min-width: 106.25rem) {
+    #services-2332 {
+        .cs-floater {
+            left: 0;
+        }
+    }
+}
+                                
+</style>
+
